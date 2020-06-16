@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+.contentLeft {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,30 @@
+.friend {
+  margin: 10px auto;
+  width: 300px;
+  border: 2px solid grey;
+}
+.friend-list {
+  width: 300px;
+}
+
+.friend-list .item {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  border: 1px solid;
+  margin: 20px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+  height: 60px;
+}
+
+.avatar {
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin-left: 10px;
+}

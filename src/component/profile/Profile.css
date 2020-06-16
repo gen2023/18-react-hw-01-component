@@ -1,0 +1,30 @@
+.profile {
+  width: 210px;
+  border: 1px solid grey;
+  margin: 10px auto;
+}
+
+.description {
+  text-align: center;
+}
+.description img {
+  border-radius: 65px;
+}
+.name,
+.label {
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+  background: #4444;
+  justify-content: space-between;
+}
+
+.stats li {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid grey;
+}

@@ -1,0 +1,15 @@
+.transaction-history {
+  width: 500px;
+  text-align: center;
+}
+.transaction-history thead {
+  background: #8cd1e8;
+}
+
+.transaction-history tr {
+  height: 50px;
+}
+
+.transaction-history tbody td {
+  border: 1px solid grey;
+}
