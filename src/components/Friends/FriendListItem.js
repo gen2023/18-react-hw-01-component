@@ -1,22 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FriendListItem = ({ id, avatar, name, isOnline }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li className="item" key={id}>
-      <span
-        className="status"
-        style={{
-          backgroundColor: isOnline ? 'green' : 'red',
-        }}
-      ></span>
+    <li className="item">
+      <span className={isOnline ? 'isOnline' : 'isOffle'}></span>
       <img className="avatar" src={avatar} alt="" width="48" />
       <p className="name">{name}</p>
     </li>
   );
 };
 
-FriendListItem.prototype = {
+FriendListItem.propTypes = {
   id: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,

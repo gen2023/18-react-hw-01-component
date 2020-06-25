@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TransactionHistoryItems = ({ id, type, amount, currency }) => {
+const TransactionHistoryItems = ({ type, amount, currency }) => {
   return (
-    <tr key={id}>
+    <tr>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
@@ -11,8 +11,7 @@ const TransactionHistoryItems = ({ id, type, amount, currency }) => {
   );
 };
 
-TransactionHistoryItems.prototype = {
-  id: PropTypes.string.isRequired,
+TransactionHistoryItems.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.number.isRequired,
   currency: PropTypes.string.isRequired,

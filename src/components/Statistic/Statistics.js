@@ -6,18 +6,19 @@ import './Statistics.css';
 const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      <h2 className="title">{title}</h2>
+      {title && <h2 className="title">{title}</h2>}
 
       <ul className="stat-list">
-        {stats.map(({ label, percentage }) => (
-          <StatisticsList label={label} percentage={percentage} />
+        {stats.map(({ id, label, percentage }) => (
+          <StatisticsList key={id} label={label} percentage={percentage} />
         ))}
       </ul>
     </section>
   );
 };
-
+Statistics.defaultProps = { title: '' };
 Statistics.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string,
   stats: PropTypes.number.isRequired,
 };
